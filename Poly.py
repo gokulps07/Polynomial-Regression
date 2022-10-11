@@ -8,10 +8,10 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as mpl
 #Reading data 
-data=pd.read_csv('data1.csv')
+data=pd.read_csv('dataset.csv.csv')
 #Seperation of dependent and independent Variable
-X=data.iloc[:,0:1]
-y=data.iloc[:,1]
+X=data.iloc[:,0:2]
+y=data.iloc[:,2]
 #Creating PolyFeature for the Independent Variable
 from sklearn.preprocessing import PolynomialFeatures
 poly=PolynomialFeatures(3)
